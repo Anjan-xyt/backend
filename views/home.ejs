@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/output.css">
+    <title>Home</title>
+</head>
+<body class="bg-zinc-800 text-white select-none">
+    <nav class="p-2 bg-zinc-900 flex justify-center md:justify-end gap-11 md:pr-48">
+        <a href="/" class="hover:text-blue-500">Home</a>
+        <a href="/profiles" class="hover:text-blue-500">Profiles</a>
+    </nav>
+    <div class = "h-screen w-full px-14 py-5">
+        <form action="/register" method="post" class="flex flex-col gap-4 items-center">
+            <input type="text" required name="name" placeholder="Enter Your Name" class="inline-block px-10 py-5 outline-none rounded-lg bg-zinc-700 focus:bg-zinc-900 active:bg-black min-w-full">
+            <input type="number" name="age" placeholder="Enter Your Age" class="inline-block px-10 py-5 outline-none rounded-lg bg-zinc-700 focus:bg-zinc-900 active:bg-black min-w-full">
+            <input type="email" name="email" placeholder="Enter Your Email" class="inline-block px-10 py-5 outline-none rounded-lg bg-zinc-700 focus:bg-zinc-900 active:bg-black min-w-full">
+            <input type="submit" value="register" class="mx-36 px-10 py-4 max-w-52 text-center text-green-400 cursor-pointer bg-teal-900 rounded hover:bg-green-950 active:bg-black">
+        </form>
+    </div>
+</body>
+</html>
